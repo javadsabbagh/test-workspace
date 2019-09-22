@@ -1,0 +1,24 @@
+Test Automation:
+    1- Speed
+    2- Remove repetition
+    3- Regression Test
+    4- Accuracy
+    5- CI/CD (Continues Integration / Continues Delivery - Continues Deployment)
+    Design - Code - Test - Deployment
+
+    Automation
+    Tools
+
+QA    
+
+
+JMeter
+    - API Testing
+        REST
+        SOAP
+
+    - Performance Testing
+        Throughput      (60 request / second)
+        Benchmarking    (RAM - CPU usage)
+        Stress Stesting 
+

@@ -14,16 +14,6 @@
     <hashTree>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="آدرس سرویس" enabled="true">
         <collectionProp name="Arguments.arguments">
-          <elementProp name="server_old" elementType="Argument">
-            <stringProp name="Argument.name">server_old</stringProp>
-            <stringProp name="Argument.value">192.168.100.111</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="port_old" elementType="Argument">
-            <stringProp name="Argument.name">port_old</stringProp>
-            <stringProp name="Argument.value">8000</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="server" elementType="Argument">
             <stringProp name="Argument.name">server</stringProp>
             <stringProp name="Argument.value">localhost</stringProp>
@@ -2281,12 +2271,12 @@ def jsonSlurper = new JsonSlurper();
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-&quot;systemCode&quot;: 3,&#xd;
-&quot;issuerBankCode&quot;: 15,&#xd;
-&quot;organCodeRequester&quot;: 5000,&#xd;
-&quot;seri&quot;: 1000,&#xd;
-&quot;serial&quot;: 98,&#xd;
-&quot;dueDate&quot;: 13980429&#xd;
+	&quot;dueDate&quot;: 13980420,&#xd;
+	&quot;systemCode&quot;: 3,&#xd;
+	&quot;issuerBankCode&quot;: 15,&#xd;
+	&quot;organCodeRequester&quot;: 5000,&#xd;
+	&quot;seri&quot;: 1000,&#xd;
+	&quot;serial&quot;: 98&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>

@@ -429,9 +429,6 @@
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
   &quot;applicantOrganCode&quot;: 5000,&#xd;
-  &quot;confirmTrackingNo&quot;: 1000,&#xd;
-  &quot;requestEntityId&quot;: 3909470,&#xd;
-  &quot;requestTypeCode&quot;: 1,&#xd;
   &quot;systemCode&quot;: 1,&#xd;
   &quot;userPersonnelNo&quot;: 286661&#xd;
 }</stringProp>
@@ -439,8 +436,8 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${server}</stringProp>
-            <stringProp name="HTTPSampler.port">${port}</stringProp>
+            <stringProp name="HTTPSampler.domain">${server_remote}</stringProp>
+            <stringProp name="HTTPSampler.port">${port_remote}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">/service/inquiry</stringProp>
@@ -1633,7 +1630,7 @@
                   <stringProp name="Argument.value">{&#xd;
   &quot;systemCode&quot;: 1,&#xd;
   &quot;applicantOrganCode&quot;: 5000,&#xd;
-  &quot;confirmTrackingNo&quot;: 17,&#xd;
+  &quot;confirmTrackingNo&quot;: 324,&#xd;
   &quot;userPersonnelNo&quot;: 286661&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
@@ -3441,7 +3438,7 @@
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">${view_bad_impact_url}/203</stringProp>
+            <stringProp name="HTTPSampler.path">${view_bad_impact_url}/169</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3604,7 +3601,7 @@
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">${view_chq_payment_url}/308</stringProp>
+            <stringProp name="HTTPSampler.path">${review_chq_payment_url}/342</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -3654,7 +3651,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="درخواست های پرداخت چک" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="تایید درخواست های پرداخت چک" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -3675,7 +3672,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">client_id=test-frontend&amp;username=44758&amp;password=123456&amp;grant_type=password</stringProp>
+                  <stringProp name="Argument.value">client_id=test-frontend&amp;username=286661&amp;password=a12345&amp;grant_type=password</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -3748,7 +3745,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="عدم تایید درخواست پرداخت چک" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="confirm chq payment" enabled="true"/>
         <hashTree>
           <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
             <collectionProp name="HeaderManager.headers">
@@ -3763,15 +3760,15 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="disprove chq-payment" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="confirm payment" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-	&quot;confirmRequestId&quot; : 69,&#xd;
-	&quot;statusCode&quot;: 3&#xd;
+	&quot;confirmRequestId&quot;:290,&#xd;
+	&quot;statusCode&quot;:2&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -3781,7 +3778,7 @@
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-            <stringProp name="HTTPSampler.path">${confirm_chq_payment_url}</stringProp>
+            <stringProp name="HTTPSampler.path">confirm-request/confirm-bad-impact/</stringProp>
             <stringProp name="HTTPSampler.method">PUT</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

@@ -113,6 +113,8 @@
 	<classpathentry kind="lib" path="/home/javad/Applications/Katalon_Studio_Linux_64-6.3.3/plugins/com.google.http-client.google-http-client_1.22.0.jar"/>
 	<classpathentry kind="lib" path="/home/javad/Applications/Katalon_Studio_Linux_64-6.3.3/plugins/ca.juliusdavies.not-yet-commons-ssl_0.3.11.jar"/>
 	<classpathentry kind="lib" path="/home/javad/Applications/Katalon_Studio_Linux_64-6.3.3/plugins/com.kms.katalon.preferences_1.0.0.201908270734.jar"/>
+	<classpathentry kind="lib" path="/home/javad/Applications/Katalon_Studio_Linux_64-6.3.3/configuration/plugin/install/6259/1.0.1/ExcelKeywords.jar"/>
+	<classpathentry kind="lib" path="/home/javad/Applications/Katalon_Studio_Linux_64-6.3.3/configuration/plugin/install/12813/1.0.6/katalon-studio-report-plugin.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

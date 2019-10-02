@@ -4302,7 +4302,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">client_id=test-frontend&amp;username=tce03&amp;password=12345&amp;grant_type=password</stringProp>
+                  <stringProp name="Argument.value">client_id=test-frontend&amp;username=286661&amp;password=a12345&amp;grant_type=password</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -4397,14 +4397,20 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-&quot;page&quot;:1,&#xd;
-&quot;size&quot;:100,&#xd;
-&quot;organIds&quot;: [1],&#xd;
-&quot;withSubOrgans&quot;: true,&#xd;
-&quot;autoLoad&quot;: false,&#xd;
-&quot;chqSeri&quot;: 112&#xd;
-}&#xd;
-</stringProp>
+    &quot;organIds&quot;: [&#xd;
+        701&#xd;
+    ],&#xd;
+    &quot;statusCodes&quot;: [&#xd;
+        1&#xd;
+    ],&#xd;
+    &quot;reviewStatusCodes&quot;: [],&#xd;
+    &quot;withSubOrgans&quot;: false,&#xd;
+    &quot;matchRejectReasons&quot;: false,&#xd;
+    &quot;likeNonPaymentSerial&quot;: false,&#xd;
+    &quot;likeReturnedChqId&quot;: false,&#xd;
+    &quot;size&quot;: 15,&#xd;
+    &quot;page&quot;: 1&#xd;
+}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -6079,7 +6085,7 @@
     &quot;systemCode&quot;: 1,&#xd;
     &quot;organIdRequester&quot;: 701,&#xd;
     &quot;userId&quot;: 105473,&#xd;
-	&quot;centralBankSerialNo&quot;: 999999&#xd;
+    &quot;centralBankSerialNo&quot;: 999999&#xd;
 }</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -8856,13 +8862,12 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-&quot;page&quot;:1,&#xd;
-&quot;size&quot;:100,&#xd;
-&quot;organIds&quot;: [701],&#xd;
-&quot;withSubOrgans&quot;: true,&#xd;
-&quot;chqSerial&quot;: 888900&#xd;
-}&#xd;
-</stringProp>
+	&quot;organIds&quot;:[701],&#xd;
+	&quot;nonpaymentTypeCode&quot;:1,&#xd;
+	&quot;sendStatusCodes&quot;:[],&#xd;
+	&quot;withSubOrgans&quot;:false,&#xd;
+	&quot;matchRejectReasons&quot;:false&#xd;
+}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>

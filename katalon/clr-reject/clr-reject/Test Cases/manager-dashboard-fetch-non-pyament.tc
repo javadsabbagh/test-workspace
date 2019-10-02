@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>کارتابل مسول شعبه:‌بازیابی درخواست های گواهینامه عدم پرداخت</description>
-   <name>manager-dashboard-fetch-non-pyament</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7df17ac3-ae7c-4de5-ad6e-aa8027d9c238</testCaseGuid>
-</TestCaseEntity>
